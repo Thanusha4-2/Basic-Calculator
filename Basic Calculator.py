@@ -41,9 +41,9 @@ menubar.add_cascade(label="Help", menu=helpmenu)
 
 cal.config(bg="grey",menu=menubar)  
 
-#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Frame>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 expression = ""
-inputText = StringVar()                     # 'StringVar()' is used to get the instance of input field
+inputText = StringVar()                     
 
 #Input Frame
 inputFrame = Frame(cal, width=312, height=50, bd=0, highlightbackground="black", highlightcolor="crimson", highlightthickness=2)
@@ -56,7 +56,7 @@ inputField.pack(ipady=19)
 button_frame = Frame(cal, width=312, height=272.5, bg="grey")
 button_frame.pack()
 
-#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Buttons>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+
 #First_row
 clearall = Button(button_frame, text = "C", fg = "white", width = 10, height = 3, bd = 0, bg = "black", cursor = "hand2", command = lambda: clear_all()).grid(row = 1, column = 0, padx = 1, pady = 1)
 l_bracket= Button(button_frame, text = "(", fg = "white", width = 10, height = 3, bd = 0, bg = "black", cursor = "hand2", command = lambda: click_button("(")).grid(row = 1, column = 1, padx = 1, pady = 1)
